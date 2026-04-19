@@ -26,9 +26,9 @@
 .proj-meta-item { font-size: 13px; color: var(--ps-subtext, #4A6A40); text-align: center; }
 .proj-meta-item strong { color: var(--ps-muted, #7A9870); font-weight: 500; display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; }
 
-/* ── CONTENT ── */
-.proj-content { padding: 3rem 3rem 3rem 3rem; max-width: 900px; }
-.proj-section { margin-bottom: 3.5rem; }
+/* ── CONTENT — left edge matches hero's 3rem padding ── */
+.proj-content { padding: 3rem 3rem 3rem 3rem; max-width: 100%; }
+.proj-section { margin-bottom: 3.5rem; max-width: 860px; }
 .proj-section-title { font-family: var(--serif); font-size: 22px; color: var(--ps-accent, #2A6040); font-weight: 500; margin-bottom: 1.1rem; padding-bottom: 8px; border-bottom: 2px solid var(--ps-border, #C8DABE); }
 .proj-body-text { font-size: 15px; color: var(--ps-body, #2C3820); line-height: 1.8; margin-bottom: 1rem; }
 .proj-body-text:last-child { margin-bottom: 0; }
@@ -69,7 +69,6 @@
 .img-placeholder svg { opacity: 0.4; }
 
 /* ── COLOUR SCHEMES ── */
-/* Green (Capstone) */
 .scheme-green {
   --ps-sidebar-bg: #EEF6EA;
   --ps-hero-bg: #F4FAF0;
@@ -87,7 +86,6 @@
   --ps-img-bg: #DCEFD4;
   --ps-highlight-bg: #EEF8E8;
 }
-/* Blue-grey (Sharpener, Vibration) */
 .scheme-bluegrey {
   --ps-sidebar-bg: #EEF2F8;
   --ps-hero-bg: #F4F7FC;
@@ -105,7 +103,6 @@
   --ps-img-bg: #D8E8F8;
   --ps-highlight-bg: #EAF0F8;
 }
-/* Grey (Tractor, Gearbox) */
 .scheme-grey {
   --ps-sidebar-bg: #F0F0EE;
   --ps-hero-bg: #F8F8F6;
@@ -123,7 +120,6 @@
   --ps-img-bg: #E8E8E4;
   --ps-highlight-bg: #F0F0EC;
 }
-/* Warm terracotta (Stragon) */
 .scheme-terracotta {
   --ps-sidebar-bg: #FBF3EE;
   --ps-hero-bg: #FDF7F3;
@@ -141,7 +137,6 @@
   --ps-img-bg: #F0CCAC;
   --ps-highlight-bg: #FAF0E8;
 }
-/* Muted indigo (Gripper) */
 .scheme-indigo {
   --ps-sidebar-bg: #F0EEF8;
   --ps-hero-bg: #F6F4FC;
