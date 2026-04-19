@@ -3,7 +3,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --cream: #F4EFF8;
+  --cream: #FDF8FE;
   --cream-mid: #E8D8F4;
   --cream-dark: #D4C0E8;
   --tan: #B090C8;
@@ -12,7 +12,7 @@
   --brown-dark: #38205A;
   --brown-deep: #180F20;
   --accent: #5C2D80;
-  --card-bg: #FAF6FC;
+  --card-bg: #FFFFFF;
   --serif: 'Playfair Display', Georgia, serif;
   --sans: 'DM Sans', system-ui, sans-serif;
 }
