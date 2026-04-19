@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Abilasha Rameshkumar</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .projects-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:20px; }
+  .proj-card { background:var(--card-bg); border:1px solid var(--cream-dark); border-radius:10px; overflow:hidden; text-decoration:none; transition:border-color 0.2s, transform 0.15s; display:block; }
+  .proj-card:hover { border-color:var(--tan); transform:translateY(-2px); }
+  .proj-card.featured { grid-column:1/-1; display:grid; grid-template-columns:280px 1fr; }
+  .proj-img { height:170px; background:var(--cream-mid); display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .proj-card.featured .proj-img { height:100%; min-height:190px; }
+  .proj-img img { width:100%; height:100%; object-fit:cover; }
+  .proj-img-ph { width:64px; height:64px; background:var(--cream-dark); border-radius:8px; display:flex; align-items:center; justify-content:center; }
+  .proj-body { padding:18px 20px; }
+  .proj-featured-label { font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--tan); margin-bottom:6px; }
+  .proj-title { font-family:var(--serif); font-size:17px; color:var(--brown-deep); font-weight:500; margin-bottom:5px; }
+  .proj-sub { font-size:12px; color:var(--brown-light); margin-bottom:10px; line-height:1.5; }
+  .proj-desc { font-size:13px; color:var(--brown-mid); line-height:1.6; margin-bottom:14px; }
+  .proj-tags { display:flex; gap:6px; flex-wrap:wrap; }
+  .proj-tag { font-size:10px; padding:2px 8px; border-radius:3px; background:var(--cream-mid); color:var(--brown-mid); border:1px solid var(--cream-dark); }
+  @media(max-width:640px) { .proj-card.featured { grid-template-columns:1fr; } .proj-card.featured .proj-img { height:200px; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-name">Abilasha Rameshkumar</a>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="resume.html">Resume</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="section-eyebrow">Work</div>
+  <h1 class="section-title">Projects</h1>
+  <p style="font-size:14px; color:var(--brown-light); max-width:600px; margin-bottom:2.5rem; line-height:1.7;">A showcase of engineering and design work highlighting CAD modelling, DFMA processes, mechanical analysis, and problem-solving across academic, personal, and team-based projects. Click a project to learn more.</p>
+
+  <div class="projects-grid">
+
+    <a href="#" class="proj-card featured">
+      <div class="proj-img">
+        <!-- Replace with: <img src="tractor-car.jpg" alt="Tractor Pull Slot Car"> -->
+        <div class="proj-img-ph">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7A5A90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="18" width="10" height="10" rx="1"/><circle cx="24" cy="22" r="6"/><line x1="12" y1="22" x2="18" y2="22"/><rect x="5" y="12" width="12" height="7"/></svg>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-featured-label">Featured project</div>
+        <div class="proj-title">Tractor pull slot car</div>
+        <div class="proj-sub">CAD design · CNC machining · FDM 3D printing · competition</div>
+        <div class="proj-desc">Designed, manufactured, and tested a tractor-pull slot car capable of climbing a 30° inclined track under increasing loads (10g, 20g, 50g). Combined CNC-machined MDF components and FDM 3D-printed parts. Emphasised design for manufacturing, traction optimisation, and iterative testing. Awarded second place in competition.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">SolidWorks</span>
+          <span class="proj-tag">CNC Machining</span>
+          <span class="proj-tag">MasterCAM</span>
+          <span class="proj-tag">DFMA</span>
+          <span class="proj-tag">Team project</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="proj-card">
+      <div class="proj-img">
+        <!-- Replace with: <img src="sharpener.jpg" alt="Redesign of Sharpener"> -->
+        <div class="proj-img-ph">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7A5A90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="20" height="16" rx="3"/><path d="M10 10 V7 Q16 3 22 7 V10"/><circle cx="16" cy="18" r="3"/></svg>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">Redesign of Staples sharpener</div>
+        <div class="proj-sub">DFMA · product redesign · assembly analysis</div>
+        <div class="proj-desc">DFMA-driven redesign of a consumer electric pencil sharpener to reduce part count, simplify assembly, and improve manufacturability, cost, and safety. Used Boothroyd-Dewhurst and Lucas Method analysis.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">DFMA</span>
+          <span class="proj-tag">Boothroyd-Dewhurst</span>
+          <span class="proj-tag">Lucas Method</span>
+          <span class="proj-tag">FMEA</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="proj-card">
+      <div class="proj-img">
+        <!-- Replace with: <img src="stragon.jpg" alt="The Stragon"> -->
+        <div class="proj-img-ph">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7A5A90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="24" height="14" rx="3"/><circle cx="9" cy="26" r="3"/><circle cx="23" cy="26" r="3"/><rect x="10" y="6" width="12" height="6"/></svg>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">The "Stragon"</div>
+        <div class="proj-sub">Assistive child transport system · human-centred design</div>
+        <div class="proj-desc">Wagon-stroller hybrid addressing limitations of traditional strollers through safety, accessibility, and user comfort. Reduced user exclusion rates from 15.5% to 11.8% through iterative design and human factors analysis.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Human Factors</span>
+          <span class="proj-tag">CAD</span>
+          <span class="proj-tag">Inclusive Design</span>
+          <span class="proj-tag">Team project</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="proj-card">
+      <div class="proj-img">
+        <!-- Replace with: <img src="gripper.jpg" alt="Robotic Gripper"> -->
+        <div class="proj-img-ph">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7A5A90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="12" width="12" height="14" rx="2"/><path d="M8 14 L4 10 L4 6"/><path d="M24 14 L28 10 L28 6"/><line x1="16" y1="12" x2="16" y2="8"/></svg>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">Two-finger robotic gripper</div>
+        <div class="proj-sub">Mechanism design · kinematic analysis · MATLAB</div>
+        <div class="proj-desc">Functional two-finger robotic gripper for precise grasping and torque/force analysis. Conducted kinematic analysis to optimise link geometry, gear synchronisation, and actuator selection.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">SolidWorks</span>
+          <span class="proj-tag">MATLAB</span>
+          <span class="proj-tag">Kinematics</span>
+          <span class="proj-tag">Engineering Drawings</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="proj-card">
+      <div class="proj-img">
+        <!-- Replace with: <img src="vibration.jpg" alt="Vibration Absorber"> -->
+        <div class="proj-img-ph">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7A5A90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4 Q20 10 16 16 Q12 22 16 28"/><path d="M8 10 Q12 16 8 22"/><path d="M24 10 Q20 16 24 22"/></svg>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">Helicopter tail rotor vibration absorber</div>
+        <div class="proj-sub">Dynamic systems · SDOF model · MATLAB simulation</div>
+        <div class="proj-desc">Designed a lightweight spring-mass system to mitigate rotor-induced vibrations in helicopter tails. Optimised absorber mass at 1.5 kg with spring stiffness of ~58,225 N/m across the 1250–1750 rpm operating range.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Vibration Analysis</span>
+          <span class="proj-tag">MATLAB</span>
+          <span class="proj-tag">SDOF Modelling</span>
+          <span class="proj-tag">SolidWorks</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="proj-card">
+      <div class="proj-img">
+        <!-- Replace with: <img src="gearbox.jpg" alt="Planetary Gearbox"> -->
+        <div class="proj-img-ph">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7A5A90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="10"/><circle cx="16" cy="16" r="4"/><circle cx="16" cy="6" r="3"/><circle cx="16" cy="26" r="3"/><circle cx="6" cy="16" r="3"/><circle cx="26" cy="16" r="3"/></svg>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">Planetary gearbox</div>
+        <div class="proj-sub">Personal CAD project · SolidWorks modelling</div>
+        <div class="proj-desc">Personal SolidWorks CAD model of a full planetary gearbox assembly with sun, planet, and ring gears. Built to practise modelling complex mechanical assemblies and gear meshing relationships.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">SolidWorks</span>
+          <span class="proj-tag">CAD Assembly</span>
+          <span class="proj-tag">Personal project</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  <span class="footer-name">Abilasha Rameshkumar</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/abilasha-rameshkumar" target="_blank">LinkedIn</a>
+    <a href="mailto:abilasharameshkumar@gmail.com">Email</a>
+  </div>
+  <span class="footer-email">abilasharameshkumar@gmail.com</span>
+</footer>
+
+</body>
+</html>
