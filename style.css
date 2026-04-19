@@ -3,7 +3,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --cream: #FDF8FE;
+  --cream: #e3e0eb;
   --cream-mid: #E8D8F4;
   --cream-dark: #D4C0E8;
   --tan: #B090C8;
