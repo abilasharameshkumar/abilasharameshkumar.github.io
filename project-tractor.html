@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="project-style.css">
 <style>
-  /* Track illustration in hero */
   .track-hero-img { width:100%; max-width:340px; margin:0 auto 1.5rem; display:block; }
 </style>
 </head>
@@ -37,7 +36,6 @@
 
   <div class="proj-main">
     <div class="proj-page-hero">
-      <!-- Slot track SVG illustration -->
       <svg class="track-hero-img" viewBox="0 0 340 80" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="30" width="340" height="20" rx="4" fill="#C8C8C0"/>
         <rect x="0" y="36" width="340" height="8" rx="2" fill="#A0A098"/>
@@ -73,19 +71,20 @@
           <div>
             <p class="proj-body-text">Designed, manufactured, and tested a tractor-pull slot car capable of climbing a 30° inclined track under increasing loads of 10g, 20g, and 50g. The project emphasised design for manufacturing, traction optimisation, and iterative testing under real constraints.</p>
             <p class="proj-body-text">The team worked under strict material constraints - limited to 50g of PLA for 3D-printed parts, with the structural base CNC-machined from MDF. Every design decision had to account for weight, traction, and manufacturability simultaneously.</p>
-            <div class="proj-result-grid" style="margin-top:1.25rem;">
-              <div class="proj-result-card"><div class="num">30°</div><div class="desc">Inclined track climbed at full load</div></div>
-              <div class="proj-result-card"><div class="num">50g</div><div class="desc">Maximum load carried successfully</div></div>
-              <div class="proj-result-card"><div class="num">2nd</div><div class="desc">Place in competition</div></div>
-            </div>
           </div>
           <div>
-            <div class="proj-img-box tall">
-              <!-- Replace with: <img src="tractor-render.jpg" alt="Tractor Pull Slot Car CAD render"> -->
-              <div class="img-placeholder" style="min-height:260px;"><span>Add SolidWorks render here</span></div>
-            </div>
-            <p class="proj-img-caption">SolidWorks CAD Render - Final Design</p>
+            <figure style="margin:0;">
+              <img src="RC1.PNG" alt="Tractor Pull Slot Car - SolidWorks CAD Render" style="width:100%;height:auto;display:block;object-fit:contain;">
+              <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:8px;text-align:center;font-style:italic;">Figure 1: SolidWorks CAD Render - Final Design</figcaption>
+            </figure>
           </div>
+        </div>
+
+        <!-- Result cards in a row below both columns -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:1.75rem;">
+          <div class="proj-result-card"><div class="num">30°</div><div class="desc">Inclined track climbed at full load</div></div>
+          <div class="proj-result-card"><div class="num">50g</div><div class="desc">Maximum load carried successfully</div></div>
+          <div class="proj-result-card"><div class="num">2nd</div><div class="desc">Place in competition</div></div>
         </div>
       </div>
 
@@ -100,14 +99,14 @@
           <li>Compared theoretical predictions with experimental climb times throughout testing</li>
         </ul>
         <div class="proj-img-grid two-col" style="margin-top:1.25rem;">
-          <div class="proj-img-box medium">
-            <div class="img-placeholder" style="min-height:180px;"><span>Add Design Iteration 1 image</span></div>
-            <div class="proj-img-caption">Design Iteration 1</div>
-          </div>
-          <div class="proj-img-box medium">
-            <div class="img-placeholder" style="min-height:180px;"><span>Add Design Iteration 2 image</span></div>
-            <div class="proj-img-caption">Design Iteration 2</div>
-          </div>
+          <figure style="margin:0;">
+            <img src="RCI1.PNG" alt="Design Iteration 1" style="width:100%;height:auto;display:block;object-fit:contain;">
+            <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 2: Design Iteration 1</figcaption>
+          </figure>
+          <figure style="margin:0;">
+            <img src="RCI2.PNG" alt="Design Iteration 2" style="width:100%;height:auto;display:block;object-fit:contain;">
+            <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 3: Design Iteration 2</figcaption>
+          </figure>
         </div>
       </div>
 
@@ -120,6 +119,13 @@
               <li>Structural base, part of motor housing, wheel components</li>
               <li>Toolpaths generated in MasterCAM with full setup sheets and G-code documentation</li>
             </ul>
+            <figure style="margin:1rem 0 0;">
+              <video controls style="width:100%;border-radius:8px;display:block;">
+                <source src="RC3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 4: CNC Machining in Progress</figcaption>
+            </figure>
           </div>
           <div>
             <h3 style="font-family:var(--serif);font-size:17px;color:var(--ps-heading);margin-bottom:8px;font-weight:500;">FDM 3D Printing (PLA)</h3>
@@ -127,16 +133,10 @@
               <li>Wheels, pulleys, and motor fixtures</li>
               <li>Parts sliced and optimised in Cura, with material usage constrained to 50g PLA total</li>
             </ul>
-          </div>
-        </div>
-        <div class="proj-img-grid two-col" style="margin-top:1.25rem;">
-          <div class="proj-img-box medium">
-            <div class="img-placeholder" style="min-height:180px;"><span>Add CNC machining photo</span></div>
-            <div class="proj-img-caption">CNC Machining in Progress</div>
-          </div>
-          <div class="proj-img-box medium">
-            <div class="img-placeholder" style="min-height:180px;"><span>Add final built car photo</span></div>
-            <div class="proj-img-caption">Final Manufactured Car</div>
+            <figure style="margin:1rem 0 0;">
+              <img src="RC2.PNG" alt="FDM 3D Printed Parts" style="width:100%;height:auto;display:block;object-fit:contain;border-radius:8px;">
+              <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 5: FDM 3D Printed Components</figcaption>
+            </figure>
           </div>
         </div>
       </div>
@@ -144,9 +144,20 @@
       <div class="proj-section">
         <div class="proj-section-title">Results</div>
         <div class="proj-highlight-box"><p>The final slot car completed all three competition heats (10g, 20g, 50g) and climbed the full 30° inclined track under maximum load. The team placed second in competition.</p></div>
-        <div class="proj-img-box medium" style="max-width:500px;margin-top:1rem;">
-          <div class="img-placeholder" style="min-height:200px;"><span>Add competition / results photo or video thumbnail</span></div>
-          <div class="proj-img-caption">Competition Day</div>
+
+        <!-- YouTube video embed -->
+        <div style="margin-top:1.5rem;">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;">
+            <iframe
+              src="https://www.youtube.com/embed/sHWCl399S98"
+              title="Tractor Pull Slot Car Competition"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;">
+            </iframe>
+          </div>
+          <p style="font-size:13px;color:var(--ps-muted);margin-top:8px;text-align:center;font-style:italic;">Figure 6: Competition Day - Team's Car on the Left Track</p>
         </div>
       </div>
 
