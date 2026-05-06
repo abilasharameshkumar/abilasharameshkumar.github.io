@@ -61,11 +61,26 @@
             <p class="proj-body-text">The solution was a single-degree-of-freedom (SDOF) spring-mass-damper absorber tuned specifically for the rotor's operating range of 1250-1750 rpm.</p>
           </div>
           <div>
-            <div class="proj-img-box tall">
-              <!-- Replace with: <img src="vibration-model.jpg" alt="Vibration Absorber"> -->
-              <div class="img-placeholder" style="min-height:260px;"><span>Add Vibration Absorber CAD or SolidWorks Model</span></div>
-            </div>
+            <figure style="margin:0;">
+              <img src="heli3.png" alt="Helicopter - Tail Rotor" style="width:100%;height:auto;display:block;object-fit:contain;">
+              <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:8px;text-align:center;font-style:italic;">Figure 1: Helicopter Tail Rotor - System Overview</figcaption>
+            </figure>
           </div>
+        </div>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">CAD Model</div>
+        <p class="proj-body-text">A full SolidWorks model of the mass-spring absorber was developed for integration into the tail rotor structure. The model captures the key dimensional relationships between the absorber mass, spring element, and mounting interface.</p>
+        <div class="proj-img-grid two-col" style="margin-top:1.25rem;">
+          <figure style="margin:0;">
+            <img src="heli1.png" alt="Vibration Absorber CAD - View 1" style="width:100%;height:auto;display:block;object-fit:contain;">
+            <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 2: SolidWorks Model - View 1</figcaption>
+          </figure>
+          <figure style="margin:0;">
+            <img src="heli2.png" alt="Vibration Absorber CAD - View 2" style="width:100%;height:auto;display:block;object-fit:contain;">
+            <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 3: SolidWorks Model - View 2</figcaption>
+          </figure>
         </div>
       </div>
 
@@ -83,18 +98,15 @@
 
       <div class="proj-section">
         <div class="proj-section-title">MATLAB Simulation Results</div>
-        <div class="proj-img-grid two-col">
-          <div class="proj-img-box medium">
-            <!-- Replace with: <img src="matlab-frequency.jpg" alt="Frequency response plot"> -->
-            <div class="img-placeholder" style="min-height:200px;"><span>Add Frequency Response Plot</span></div>
-            <div class="proj-img-caption">Primary Mass Displacement vs. Frequency with Absorber</div>
-          </div>
-          <div class="proj-img-box medium">
-            <!-- Replace with: <img src="matlab-bandwidth.jpg" alt="Bandwidth plot"> -->
-            <div class="img-placeholder" style="min-height:200px;"><span>Add Bandwidth Plot</span></div>
-            <div class="proj-img-caption">Bandwidth Plot Showing Frequency Response of Absorber System</div>
-          </div>
-        </div>
+        <p class="proj-body-text">MATLAB was used to model the frequency response of the system and validate the absorber design across the full operating range. The plots below confirm effective vibration mitigation and resonance control.</p>
+        <figure style="margin:1.25rem 0 0;">
+          <img src="heli4.png" alt="Primary Mass Displacement vs Frequency and Absorber Mass Displacement vs Frequency" style="width:100%;height:auto;display:block;object-fit:contain;">
+          <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:8px;text-align:center;font-style:italic;">Figure 4: Primary Mass Displacement vs. Frequency and Absorber Mass Displacement vs. Frequency</figcaption>
+        </figure>
+        <figure style="margin:1.5rem 0 0;">
+          <img src="heli5.png" alt="Bandwidth Plot" style="width:100%;height:auto;display:block;object-fit:contain;">
+          <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:8px;text-align:center;font-style:italic;">Figure 5: Bandwidth Plot Showing Frequency Response of Absorber System</figcaption>
+        </figure>
       </div>
 
       <div class="proj-section">
