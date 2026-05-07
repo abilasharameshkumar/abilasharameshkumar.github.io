@@ -6,8 +6,10 @@
 <title>Abilasha Rameshkumar - Mechanical Engineer</title>
 <link rel="stylesheet" href="style.css">
 <style>
-  .hero-title { font-family:var(--serif); font-size:clamp(42px,7vw,72px); font-weight:600; color:var(--brown-deep); line-height:1.08; margin-bottom:1.5rem; }
-  .hero-title span { color:var(--accent); }
+  .hero-title { font-family:var(--serif); font-weight:600; color:var(--brown-deep); line-height:1.08; margin-bottom:1.5rem; }
+  .hero-first { font-size:clamp(56px,9vw,90px); display:block; }
+  .hero-last { font-size:clamp(36px,5.5vw,58px); display:block; color:var(--brown-dark); }
+  
   .about-grid { display:grid; grid-template-columns:200px 1fr; gap:3rem; align-items:start; margin-bottom:3rem; }
   .skills-cols { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem; margin-bottom:3rem; }
   .skill-block h4 { font-family:var(--serif); font-size:15px; color:var(--accent); margin-bottom:0.75rem; font-weight:500; }
@@ -39,12 +41,12 @@
 <!-- HERO -->
 <div class="page" style="min-height:calc(100vh - 60px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding-bottom:2rem;">
   <div class="section-eyebrow">Mechanical Engineering · Toronto Metropolitan University</div>
-  <h1 class="hero-title">Abilasha<br><span>Rameshkumar</span></h1>
+  <h1 class="hero-title"><span class="hero-first">Abilasha</span><span class="hero-last">Rameshkumar</span></h1>
   <p style="font-size:16px;color:var(--brown-light);max-width:520px;margin-bottom:1rem;line-height:1.75;">I care deeply about engineering done right. I'm drawn to the full process - from defining constraints to iterating on designs to producing something that actually functions in the real world.</p>
   <p style="font-size:14px;color:var(--brown-mid);max-width:480px;margin-bottom:2rem;line-height:1.7;">Seeking a co-op or internship for 2026-2027 where I can contribute to real engineering work and keep growing.</p>
 
   <!-- What I bring -->
-  <div class="highlights-grid" style="max-width:700px;width:100%;text-align:left;">
+  <div class="highlights-grid" style="max-width:900px;width:100%;text-align:left;grid-template-columns:repeat(4,1fr);">
     <div class="highlight-card">
       <div class="h-label">Market-Ready Design</div>
       <div class="h-text">Designed and developed a full product redesign from concept to manufacturable solution in my capstone</div>
