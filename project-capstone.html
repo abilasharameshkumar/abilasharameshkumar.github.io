@@ -99,13 +99,19 @@
           <li>Performed load and structural calculations alongside material selection</li>
           <li>Produced full 3D CAD model in SolidWorks</li>
         </ul>
-        <div class="proj-img-grid two-col" style="margin-top:1.5rem;">
-          <figure style="margin:0.75rem 0 0;">
-            <img src="4GC.PNG" alt="Back Corner View of Caddy" style="width:100%;height:auto;display:block;object-fit:contain;">
+
+        <!-- Force both images to same height so captions align -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:1.5rem;align-items:end;">
+          <figure style="margin:0;">
+            <div style="width:100%;aspect-ratio:4/3;overflow:hidden;">
+              <img src="4GC.PNG" alt="Back Corner View of Caddy" style="width:100%;height:100%;object-fit:contain;display:block;">
+            </div>
             <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 2: Back Corner View</figcaption>
           </figure>
-          <figure style="margin:0.75rem 0 0;">
-            <img src="5GC.png" alt="Caddy at Full Height Adjustment" style="width:100%;height:auto;display:block;object-fit:contain;">
+          <figure style="margin:0;">
+            <div style="width:100%;aspect-ratio:4/3;overflow:hidden;">
+              <img src="5GC.png" alt="Caddy at Full Height Adjustment" style="width:100%;height:100%;object-fit:contain;display:block;">
+            </div>
             <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 3: Caddy at Full Height</figcaption>
           </figure>
         </div>
@@ -135,7 +141,8 @@
 
       <div class="proj-section">
         <div class="proj-section-title">Materials and Analysis</div>
-        <div class="proj-result-grid">
+        <!-- All 4 cards in one row -->
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:1rem;">
           <div class="proj-result-card"><div class="num">6061-T6</div><div class="desc">Aluminum frame for high strength-to-weight ratio and excellent machinability</div></div>
           <div class="proj-result-card"><div class="num">HDPE</div><div class="desc">Housing material - lightweight and weather-resistant, reduces overall caddy weight</div></div>
           <div class="proj-result-card"><div class="num">S.S.</div><div class="desc">Stainless steel gas spring - corrosion-resistant and rated for repeated operation</div></div>
@@ -149,7 +156,7 @@
         <p class="proj-body-text">Load and structural calculations confirmed the design meets all requirements under real operating conditions. The final solution balances performance, manufacturability, and user needs.</p>
         <figure style="margin:1.5rem 0 0;">
           <img src="prof1.jpg" alt="Victoria Street Engineering Team with Dr. Filippo Salustri" style="width:100%;height:auto;display:block;object-fit:cover;border-radius:8px;">
-          <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:8px;text-align:center;font-style:italic;">Victoria Street Engineering with Dr. Filippo Salustri</figcaption>
+          <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:8px;text-align:center;font-style:italic;">Figure 6: Victoria Street Engineering with Dr. Filippo Salustri</figcaption>
         </figure>
       </div>
 
