@@ -13,7 +13,6 @@
   .proj-img { height:170px; background:var(--cream-mid); display:flex; align-items:center; justify-content:center; overflow:hidden; }
   .proj-card.featured .proj-img { height:100%; min-height:190px; }
   .proj-img img { width:100%; height:100%; object-fit:cover; }
-  .proj-img-ph { width:64px; height:64px; background:var(--cream-dark); border-radius:8px; display:flex; align-items:center; justify-content:center; }
   .proj-body { padding:20px 22px; }
   .proj-featured-label { font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--tan); margin-bottom:6px; }
   .proj-title { font-family:var(--serif); font-size:18px; color:var(--brown-deep); font-weight:500; margin-bottom:5px; }
@@ -34,6 +33,7 @@
     <li><a href="resume.html">Resume</a></li>
   </ul>
 </nav>
+
 <div style="display:grid; grid-template-columns:220px 1fr;">
   <aside style="border-right:1px solid var(--cream-dark); background:#F5F3F0; padding:2rem 0; position:sticky; top:60px; height:calc(100vh - 60px); overflow-y:auto;">
     <div style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--tan); padding:0 1.5rem; margin-bottom:1rem;">Projects</div>
@@ -45,90 +45,103 @@
     <a href="project-vibration.html" style="display:block; padding:8px 1.5rem; font-size:13px; color:var(--brown-mid); text-decoration:none; border-left:3px solid transparent; line-height:1.4;">Helicopter Tail Rotor Vibration Absorber</a>
     <a href="project-gearbox.html" style="display:block; padding:8px 1.5rem; font-size:13px; color:var(--brown-mid); text-decoration:none; border-left:3px solid transparent; line-height:1.4;">Planetary Gearbox</a>
   </aside>
-  <div class="page" style="padding-top: 1rem;">
-  <div class="page">
-  <div class="section-eyebrow">Work</div>
-  <h1 class="section-title" style="font-size: 70px;">Projects</h1>
-  <p style="font-size:15px;color:var(--brown-light);max-width:600px;margin-bottom:2.5rem;line-height:1.7;">A showcase of engineering and design work highlighting CAD modelling, DFMA processes, mechanical analysis, and problem-solving across academic, personal, and team-based projects. Click any project to learn more.</p>
-  <div class="projects-grid">
 
-    <a href="project-capstone.html" class="proj-card featured">
-      <div class="proj-img">
-        <!-- Replace with: <img src="capstone.jpg" alt="Garden Hose Caddy"> -->
-        <div class="proj-img-ph"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7050A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="24" r="4"/><circle cx="24" cy="24" r="4"/><rect x="4" y="10" width="24" height="10" rx="2"/><line x1="16" y1="10" x2="16" y2="4"/><line x1="10" y1="4" x2="22" y2="4"/></svg></div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-featured-label">Capstone · 2025-2026</div>
-        <div class="proj-title">Automated Garden Hose Caddy</div>
-        <div class="proj-sub">Capstone · Mechanical Design · Ergonomics · CAD · Structural Analysis</div>
-        <div class="proj-desc">Redesigned an existing garden hose caddy into a market-ready product by eliminating manual cranking and improving usability through automated retraction and gas spring-assisted height adjustment. Team project supervised by Dr. Filippo Salustri at TMU.</div>
-        <div class="proj-tags"><span class="proj-tag">Capstone</span><span class="proj-tag">SolidWorks</span><span class="proj-tag">Ergonomics</span><span class="proj-tag">Structural Analysis</span><span class="proj-tag">GD&amp;T</span></div>
-      </div>
-    </a>
+  <div class="page" style="padding-top:2rem;">
+    <div class="section-eyebrow">Work</div>
+    <h1 class="section-title" style="font-size:48px;">Projects</h1>
+    <p style="font-size:15px;color:var(--brown-light);max-width:600px;margin-bottom:2.5rem;line-height:1.7;">A showcase of engineering and design work highlighting CAD modelling, DFMA processes, mechanical analysis, and problem-solving across academic, personal, and team-based projects. Click any project to learn more.</p>
 
-    <a href="project-tractor.html" class="proj-card">
-      <div class="proj-img"><div class="proj-img-ph"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7050A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="18" width="10" height="10" rx="1"/><circle cx="24" cy="22" r="6"/><line x1="12" y1="22" x2="18" y2="22"/><rect x="5" y="12" width="12" height="7"/></svg></div></div>
-      <div class="proj-body">
-        <div class="proj-title">Tractor Pull Slot Car</div>
-        <div class="proj-sub">CAD · CNC Machining · FDM 3D Printing · Competition</div>
-        <div class="proj-desc">Designed and manufactured a slot car to climb a 30° inclined track under loads up to 50g. Awarded second place in competition.</div>
-        <div class="proj-tags"><span class="proj-tag">SolidWorks</span><span class="proj-tag">CNC</span><span class="proj-tag">MasterCAM</span><span class="proj-tag">DFMA</span></div>
-      </div>
-    </a>
+    <div class="projects-grid">
 
-    <a href="project-sharpener.html" class="proj-card">
-      <div class="proj-img"><div class="proj-img-ph"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7050A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="20" height="16" rx="3"/><path d="M10 10 V7 Q16 3 22 7 V10"/><circle cx="16" cy="18" r="3"/></svg></div></div>
-      <div class="proj-body">
-        <div class="proj-title">Redesign of Staples Sharpener</div>
-        <div class="proj-sub">DFMA · Product Redesign · Assembly Analysis</div>
-        <div class="proj-desc">DFMA-driven redesign of a consumer electric pencil sharpener to reduce part count, simplify assembly, and improve manufacturability.</div>
-        <div class="proj-tags"><span class="proj-tag">DFMA</span><span class="proj-tag">Boothroyd-Dewhurst</span><span class="proj-tag">Lucas Method</span></div>
-      </div>
-    </a>
+      <a href="project-capstone.html" class="proj-card featured">
+        <div class="proj-img">
+          <img src="Automated Garden Hose Caddy 2.PNG" alt="Automated Garden Hose Caddy">
+        </div>
+        <div class="proj-body">
+          <div class="proj-featured-label">Capstone · 2025-2026</div>
+          <div class="proj-title">Automated Garden Hose Caddy</div>
+          <div class="proj-sub">Capstone · Mechanical Design · Ergonomics · CAD · Structural Analysis</div>
+          <div class="proj-desc">Redesigned an existing garden hose caddy into a market-ready product by eliminating manual cranking and improving usability through automated retraction and gas spring-assisted height adjustment. Team project supervised by Dr. Filippo Salustri at TMU.</div>
+          <div class="proj-tags"><span class="proj-tag">Capstone</span><span class="proj-tag">SolidWorks</span><span class="proj-tag">Ergonomics</span><span class="proj-tag">Structural Analysis</span><span class="proj-tag">GD&amp;T</span></div>
+        </div>
+      </a>
 
-    <a href="project-stragon.html" class="proj-card">
-      <div class="proj-img"><div class="proj-img-ph"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7050A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="24" height="14" rx="3"/><circle cx="9" cy="26" r="3"/><circle cx="23" cy="26" r="3"/><rect x="10" y="6" width="12" height="6"/></svg></div></div>
-      <div class="proj-body">
-        <div class="proj-title">The "Stragon" - Assistive Child Transport System</div>
-        <div class="proj-sub">Human-Centred Design · CAD · Inclusive Design</div>
-        <div class="proj-desc">Wagon-stroller hybrid improving safety, accessibility, and user comfort. Reduced user exclusion rates from 15.5% to 11.8%.</div>
-        <div class="proj-tags"><span class="proj-tag">Human Factors</span><span class="proj-tag">CAD</span><span class="proj-tag">Inclusive Design</span></div>
-      </div>
-    </a>
+      <a href="project-tractor.html" class="proj-card">
+        <div class="proj-img">
+          <img src="RC I1.png" alt="Tractor Pull Slot Car">
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">Tractor Pull Slot Car</div>
+          <div class="proj-sub">CAD · CNC Machining · FDM 3D Printing · Competition</div>
+          <div class="proj-desc">Designed and manufactured a slot car to climb a 30° inclined track under loads up to 50g. Awarded second place in competition.</div>
+          <div class="proj-tags"><span class="proj-tag">SolidWorks</span><span class="proj-tag">CNC</span><span class="proj-tag">MasterCAM</span><span class="proj-tag">DFMA</span></div>
+        </div>
+      </a>
 
-    <a href="project-gripper.html" class="proj-card">
-      <div class="proj-img"><div class="proj-img-ph"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7050A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="12" width="12" height="14" rx="2"/><path d="M8 14 L4 10 L4 6"/><path d="M24 14 L28 10 L28 6"/><line x1="16" y1="12" x2="16" y2="8"/></svg></div></div>
-      <div class="proj-body">
-        <div class="proj-title">Two-Finger Robotic Gripper</div>
-        <div class="proj-sub">Mechanism Design · Kinematic Analysis · MATLAB</div>
-        <div class="proj-desc">Functional two-finger robotic gripper for precise grasping, with full force, torque, and kinematic analysis.</div>
-        <div class="proj-tags"><span class="proj-tag">SolidWorks</span><span class="proj-tag">MATLAB</span><span class="proj-tag">Kinematics</span></div>
-      </div>
-    </a>
+      <a href="project-sharpener.html" class="proj-card">
+        <div class="proj-img">
+          <img src="SH 1.png" alt="Redesign of Staples Sharpener">
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">Redesign of Staples Sharpener</div>
+          <div class="proj-sub">DFMA · Product Redesign · Assembly Analysis</div>
+          <div class="proj-desc">DFMA-driven redesign of a consumer electric pencil sharpener to reduce part count, simplify assembly, and improve manufacturability.</div>
+          <div class="proj-tags"><span class="proj-tag">DFMA</span><span class="proj-tag">Boothroyd-Dewhurst</span><span class="proj-tag">Lucas Method</span></div>
+        </div>
+      </a>
 
-    <a href="project-vibration.html" class="proj-card">
-      <div class="proj-img"><div class="proj-img-ph"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7050A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4 Q20 10 16 16 Q12 22 16 28"/><path d="M8 10 Q12 16 8 22"/><path d="M24 10 Q20 16 24 22"/></svg></div></div>
-      <div class="proj-body">
-        <div class="proj-title">Helicopter Tail Rotor Vibration Absorber</div>
-        <div class="proj-sub">Dynamic Systems · SDOF Model · MATLAB Simulation</div>
-        <div class="proj-desc">Lightweight spring-mass absorber system for helicopter tail rotors, optimised across the 1250-1750 rpm operating range.</div>
-        <div class="proj-tags"><span class="proj-tag">Vibration Analysis</span><span class="proj-tag">MATLAB</span><span class="proj-tag">SDOF</span></div>
-      </div>
-    </a>
+      <a href="project-stragon.html" class="proj-card">
+        <div class="proj-img">
+          <img src="STRA1.png" alt="The Stragon">
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">The "Stragon" - Assistive Child Transport System</div>
+          <div class="proj-sub">Human-Centred Design · CAD · Inclusive Design</div>
+          <div class="proj-desc">Wagon-stroller hybrid improving safety, accessibility, and user comfort. Reduced user exclusion rates from 15.5% to 11.8%.</div>
+          <div class="proj-tags"><span class="proj-tag">Human Factors</span><span class="proj-tag">CAD</span><span class="proj-tag">Inclusive Design</span></div>
+        </div>
+      </a>
 
-    <a href="project-gearbox.html" class="proj-card">
-      <div class="proj-img"><div class="proj-img-ph"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#7050A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="10"/><circle cx="16" cy="16" r="4"/><circle cx="16" cy="6" r="3"/><circle cx="16" cy="26" r="3"/><circle cx="6" cy="16" r="3"/><circle cx="26" cy="16" r="3"/></svg></div></div>
-      <div class="proj-body">
-        <div class="proj-title">Planetary Gearbox</div>
-        <div class="proj-sub">Personal CAD Project · SolidWorks Assembly</div>
-        <div class="proj-desc">Personal SolidWorks CAD model of a full planetary gearbox with sun, planet, and ring gear configurations.</div>
-        <div class="proj-tags"><span class="proj-tag">SolidWorks</span><span class="proj-tag">CAD Assembly</span><span class="proj-tag">Personal</span></div>
-      </div>
-    </a>
+      <a href="project-gripper.html" class="proj-card">
+        <div class="proj-img">
+          <img src="RG1.png" alt="Two-Finger Robotic Gripper">
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">Two-Finger Robotic Gripper</div>
+          <div class="proj-sub">Mechanism Design · Kinematic Analysis · MATLAB</div>
+          <div class="proj-desc">Functional two-finger robotic gripper for precise grasping, with full force, torque, and kinematic analysis.</div>
+          <div class="proj-tags"><span class="proj-tag">SolidWorks</span><span class="proj-tag">MATLAB</span><span class="proj-tag">Kinematics</span></div>
+        </div>
+      </a>
 
+      <a href="project-vibration.html" class="proj-card">
+        <div class="proj-img">
+          <img src="heli1.png" alt="Helicopter Tail Rotor Vibration Absorber">
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">Helicopter Tail Rotor Vibration Absorber</div>
+          <div class="proj-sub">Dynamic Systems · SDOF Model · MATLAB Simulation</div>
+          <div class="proj-desc">Lightweight spring-mass absorber system for helicopter tail rotors, optimised across the 1250-1750 rpm operating range.</div>
+          <div class="proj-tags"><span class="proj-tag">Vibration Analysis</span><span class="proj-tag">MATLAB</span><span class="proj-tag">SDOF</span></div>
+        </div>
+      </a>
+
+      <a href="project-gearbox.html" class="proj-card">
+        <div class="proj-img">
+          <img src="GB 1.png" alt="Planetary Gearbox">
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">Planetary Gearbox</div>
+          <div class="proj-sub">Personal CAD Project · SolidWorks Assembly</div>
+          <div class="proj-desc">Personal SolidWorks CAD model of a full planetary gearbox with sun, planet, and ring gear configurations.</div>
+          <div class="proj-tags"><span class="proj-tag">SolidWorks</span><span class="proj-tag">CAD Assembly</span><span class="proj-tag">Personal</span></div>
+        </div>
+      </a>
+
+    </div>
   </div>
 </div>
-</div>
+
 <footer>
   <span class="footer-name">Abilasha Rameshkumar</span>
   <div class="footer-links"><a href="https://www.linkedin.com/in/abilasha-rameshkumar" target="_blank">LinkedIn</a><a href="mailto:abilasharameshkumar@gmail.com">Email</a></div>
