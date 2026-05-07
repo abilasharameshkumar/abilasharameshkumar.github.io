@@ -9,7 +9,6 @@
   .hero-title { font-family:var(--serif); font-size:clamp(42px,7vw,72px); font-weight:600; color:var(--brown-deep); line-height:1.08; margin-bottom:1.5rem; }
   .hero-title span { color:var(--accent); }
   .about-grid { display:grid; grid-template-columns:200px 1fr; gap:3rem; align-items:start; margin-bottom:3rem; }
-  .about-photo-placeholder { width:200px; height:200px; border-radius:50%; background:var(--cream-mid); border:3px solid var(--cream-dark); display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-size:44px; color:var(--tan); flex-shrink:0; }
   .skills-cols { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem; margin-bottom:3rem; }
   .skill-block h4 { font-family:var(--serif); font-size:15px; color:var(--accent); margin-bottom:0.75rem; font-weight:500; }
   .skill-block ul { list-style:none; }
@@ -19,7 +18,11 @@
   .course-tag { font-size:12px; padding:6px 12px; background:var(--cream-mid); border:1px solid var(--cream-dark); border-radius:4px; color:var(--brown-mid); }
   .course-tag.minor { border-color:var(--accent); color:var(--accent); background:#F5EEFF; }
   .section-divider { border:none; border-top:1px solid var(--cream-dark); margin:0; }
-  @media(max-width:640px){ .about-grid{grid-template-columns:1fr;} .about-photo-placeholder{margin:0 auto;} .skills-cols{grid-template-columns:1fr;} }
+  .highlights-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:12px; margin:2rem 0 2.5rem; }
+  .highlight-card { background:var(--card-bg); border:1px solid var(--cream-dark); border-radius:8px; padding:1rem 1.1rem; }
+  .highlight-card .h-label { font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--tan); margin-bottom:5px; }
+  .highlight-card .h-text { font-size:13px; color:var(--brown-mid); line-height:1.5; }
+  @media(max-width:640px){ .about-grid{grid-template-columns:1fr;} .skills-cols{grid-template-columns:1fr;} }
 </style>
 </head>
 <body>
@@ -34,13 +37,35 @@
 </nav>
 
 <!-- HERO -->
-<div class="page" style="min-height:calc(100vh - 60px);display:flex;flex-direction:column;justify-content:center;padding-bottom:2rem;">
+<div class="page" style="min-height:calc(100vh - 60px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding-bottom:2rem;">
   <div class="section-eyebrow">Mechanical Engineering · Toronto Metropolitan University</div>
   <h1 class="hero-title">Abilasha<br><span>Rameshkumar</span></h1>
-  <p style="font-size:16px;color:var(--brown-light);max-width:540px;margin-bottom:1rem;line-height:1.75;">Fourth-year Mechanical Engineering student with a passion for turning ideas into real, well-engineered solutions. Focused on design, manufacturing, and making things that actually work.</p>
-  <p style="font-size:14px;color:var(--brown-mid);max-width:520px;margin-bottom:2.5rem;line-height:1.7;">Seeking a co-op or internship for 2026-2027, where I can apply my technical skills and contribute to meaningful engineering projects.</p>
-  <div style="display:flex;gap:12px;flex-wrap:wrap;">
-    <a href="projects.html" class="btn-primary">View projects</a>
+  <p style="font-size:16px;color:var(--brown-light);max-width:520px;margin-bottom:1rem;line-height:1.75;">I care deeply about engineering done right. I'm drawn to the full process - from defining constraints to iterating on designs to producing something that actually functions in the real world.</p>
+  <p style="font-size:14px;color:var(--brown-mid);max-width:480px;margin-bottom:2rem;line-height:1.7;">Seeking a co-op or internship for 2026-2027 where I can contribute to real engineering work and keep growing.</p>
+
+  <!-- What I bring -->
+  <div class="highlights-grid" style="max-width:700px;width:100%;text-align:left;">
+    <div class="highlight-card">
+      <div class="h-label">Market-Ready Design</div>
+      <div class="h-text">Designed and developed a full product redesign from concept to manufacturable solution in my capstone</div>
+    </div>
+    <div class="highlight-card">
+      <div class="h-label">CAD and Manufacturing</div>
+      <div class="h-text">Hands-on experience with SolidWorks, CNC machining, MasterCAM, and FDM 3D printing</div>
+    </div>
+    <div class="highlight-card">
+      <div class="h-label">Design Thinking</div>
+      <div class="h-text">Ergonomics-driven, user-centred design approach - validated through human factors analysis and iterative testing</div>
+    </div>
+    <div class="highlight-card">
+      <div class="h-label">Leadership</div>
+      <div class="h-text">Led a 1,000+ member student organization as president while managing budgets, teams, and large-scale events</div>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+    <a href="project-capstone.html" class="btn-primary">See my capstone project</a>
+    <a href="projects.html" class="btn-outline">All projects</a>
     <a href="https://www.linkedin.com/in/abilasha-rameshkumar" target="_blank" class="btn-outline">LinkedIn</a>
     <a href="mailto:abilasharameshkumar@gmail.com" class="btn-outline">Email</a>
   </div>
@@ -54,8 +79,7 @@
   <h2 class="section-title">About Me</h2>
 
   <div class="about-grid">
-    <div class="about-photo-placeholder">AR</div>
-    <!-- Replace above line with: <img src="photo.jpg" alt="Abilasha Rameshkumar" style="width:200px;height:200px;border-radius:50%;object-fit:cover;border:3px solid var(--cream-dark);flex-shrink:0;"> -->
+    <img src="pic.PNG" alt="Abilasha Rameshkumar" style="width:200px;height:200px;border-radius:50%;object-fit:cover;border:3px solid var(--cream-dark);flex-shrink:0;">
     <div>
       <p style="color:var(--brown-mid);margin-bottom:1rem;font-size:15px;line-height:1.75;">Hi! I'm Abilasha, a fourth-year Mechanical Engineering student at Toronto Metropolitan University. I'm genuinely passionate about how things are designed and built, and I'm drawn to projects where engineering decisions have a real, tangible impact.</p>
       <p style="color:var(--brown-mid);margin-bottom:1rem;font-size:15px;line-height:1.75;">I love digging into problems, iterating on designs, and seeing concepts come to life through CAD, manufacturing, and hands-on work. I thrive in collaborative environments and care a lot about communication and getting the details right.</p>
@@ -118,8 +142,8 @@
     <span class="course-tag">Capstone Design Project</span>
     <span class="course-tag">Integrated Manufacturing</span>
     <span class="course-tag">Topics in Manufacturing Engineering</span>
-    <span class="course-tag course-tag minor">Minor in French</span>
-    <span class="course-tag course-tag minor">Minor in Philosophy</span>
+    <span class="course-tag minor">Minor in French</span>
+    <span class="course-tag minor">Minor in Philosophy</span>
   </div>
 </div>
 
