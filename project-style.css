@@ -8,7 +8,23 @@
 .proj-sidebar .back-link { font-size: 12px; color: var(--ps-muted, #7A9870); padding: 0 1.5rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 6px; text-decoration: none; }
 .proj-sidebar .back-link:hover { color: var(--ps-accent, #2A6040); }
 .proj-main { overflow: hidden; }
-
+.scheme-teal {
+  --ps-sidebar-bg: #E8F5F4;
+  --ps-hero-bg: #F2FAFA;
+  --ps-border: #90C8C4;
+  --ps-accent: #165858;
+  --ps-heading: #061E1E;
+  --ps-subtext: #246060;
+  --ps-muted: #508888;
+  --ps-body: #122424;
+  --ps-link: #1C6060;
+  --ps-hover: rgba(22,88,88,0.06);
+  --ps-tag-bg: #B8E8E4;
+  --ps-tag-border: #68B8B4;
+  --ps-tag-text: #082828;
+  --ps-img-bg: #CCE8E6;
+  --ps-highlight-bg: #E2F4F2;
+}
 @media (max-width: 800px) {
   .proj-layout { grid-template-columns: 1fr; }
   .proj-sidebar { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--ps-border, #C8DABE); padding: 1rem 0; }
