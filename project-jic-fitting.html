@@ -1,0 +1,185 @@
+$ git show HEAD:project-jic-fitting.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Male JIC 37° Flare Hydraulic Fitting - Abilasha Rameshkumar</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project-style.css">
+</head>
+<body class="scheme-teal">
+<nav>
+  <a href="index.html" class="nav-name">Abilasha Rameshkumar</a>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="resume.html">Resume</a></li>
+  </ul>
+</nav>
+
+<div class="proj-layout scheme-teal">
+  <aside class="proj-sidebar">
+    <a href="projects.html" class="back-link">← All Projects</a>
+    <div class="proj-sidebar-title">Projects</div>
+    <a href="project-capstone.html">Automated Garden Hose Caddy</a>
+    <a href="project-tractor.html">Tractor Pull Slot Car</a>
+    <a href="project-sharpener.html">Redesign of Staples Sharpener</a>
+    <a href="project-stragon.html">The "Stragon"</a>
+    <a href="project-gripper.html">Two-Finger Robotic Gripper</a>
+    <a href="project-vibration.html">Helicopter Tail Rotor Vibration Absorber</a>
+    <a href="project-gearbox.html">Planetary Gearbox</a>
+    <a href="project-jic-fitting.html" class="active">Male JIC 37° Flare Hydraulic Fitting</a>
+  </aside>
+
+  <div class="proj-main">
+    <div class="proj-page-hero">
+      <div class="section-eyebrow">PERSONAL PROJECT · 2026</div>
+      <h1 class="proj-page-title">Male JIC 37° Flare Hydraulic Fitting</h1>
+      <p class="proj-page-sub">A hydraulic fitting modeled and documented to professional standards. The project covers 3D part modeling, a mating assembly, a full GD&T drawing package, and a manufacturing rationale, all built in Autodesk Inventor.</p>
+      <div class="proj-page-tags">
+        <span class="proj-page-tag">Autodesk Inventor</span>
+        <span class="proj-page-tag">GD&amp;T</span>
+        <span class="proj-page-tag">ASME Y14.5-2018</span>
+        <span class="proj-page-tag">Design for Manufacturing</span>
+        <span class="proj-page-tag">Tolerance Analysis</span>
+        <span class="proj-page-tag">Technical Drawing</span>
+        <span class="proj-page-tag">Hydraulic Fittings</span>
+      </div>
+      <div class="proj-meta-row">
+        <div class="proj-meta-item"><strong>Type</strong>Personal Project</div>
+        <div class="proj-meta-item"><strong>Role</strong>Sole Designer</div>
+        <div class="proj-meta-item"><strong>Tools</strong>Autodesk Inventor</div>
+        <div class="proj-meta-item"><strong>Year</strong>2026</div>
+      </div>
+    </div>
+
+    <!-- Hero image: full width, no caption -->
+    <figure style="margin:0;">
+      <img src="image1" alt="Male JIC 37 Degree Flare Hydraulic Fitting" style="width:100%;height:auto;display:block;object-fit:cover;max-height:480px;">
+    </figure>
+
+    <div class="proj-content">
+
+      <div class="proj-section">
+        <div class="proj-section-title">Why This Part</div>
+        <p class="proj-body-text">A JIC 37 degree flare fitting is one of the most common connectors in hydraulic systems. It looks simple, but designing one well means getting the threads, the sealing cone, and a set of tight tolerances all correct at once. That made it a strong piece to model and fully document.</p>
+        <p class="proj-body-text">I designed a size -8 fitting, which connects half inch tube and uses a 3/4-16 straight thread, for a system rated around 3000 psi.</p>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">How the Seal Works</div>
+        <p class="proj-body-text">The most important thing about a JIC fitting is where the seal happens. It is not the threads. The seal is metal on metal between the 37 degree cone on the male part and the matching seat inside the female part. The threads only pull the two parts together.</p>
+        <p class="proj-body-text">Once I understood that, every design and tolerance decision pointed back to protecting that one cone surface.</p>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">Modeling and Assembly</div>
+        <p class="proj-body-text">I built two parts in Inventor. The male fitting has the sealing cone, the straight thread, a wrench hex, and a through bore. The female mate has an internal thread, an internal 37 degree seat, and the same bore. Each part started as a 2D profile that I revolved into a solid, with the hex cut as a separate feature and cosmetic threads applied.</p>
+        <p class="proj-body-text">I then brought both parts into an assembly and seated the cones together. A section view through the assembly confirms the two cones meet and the bores line up into one channel.</p>
+
+        <figure style="margin:1.5rem 0 0;">
+          <img src="image2" alt="Assembly half section showing the two 37 degree cones seated together" style="width:100%;height:auto;display:block;object-fit:contain;border-radius:6px;">
+          <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:8px;text-align:center;font-style:italic;">Figure 1: Assembly half section showing the two 37 degree cones seated together.</figcaption>
+        </figure>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">Tolerancing and GD&amp;T Strategy</div>
+        <p class="proj-body-text">The drawing follows ASME Y14.5-2018. Tolerances are tight only where the seal needs them and loose everywhere else, which keeps inspection and scrap costs down.</p>
+
+        <table class="proj-table">
+          <thead>
+            <tr>
+              <th>Callout</th>
+              <th>Where it goes</th>
+              <th>Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Datum A</td><td>Thread axis</td><td>Locates the part in use</td></tr>
+            <tr><td>Datum B</td><td>Shoulder face</td><td>A square reference for stack up</td></tr>
+            <tr><td>Total runout 0.002 in</td><td>37° seat, to Datum A</td><td>The cone must run true to the axis or it leaks</td></tr>
+            <tr><td>Perpendicularity 0.002 in</td><td>Shoulder, to Datum A</td><td>Keeps the seat face square</td></tr>
+            <tr><td>Surface finish Ra 0.8 µm</td><td>37° seat only</td><td>The only surface that has to seal</td></tr>
+            <tr><td>General tolerance ±0.005 in, ±0.5°</td><td>All other features</td><td>Loose where function allows, which is cheaper</td></tr>
+          </tbody>
+        </table>
+
+        <p class="proj-body-text" style="margin-top:1rem;">I used total runout rather than concentricity because ASME Y14.5-2018 removed concentricity as a symbol.</p>
+
+        <figure style="margin:1.5rem 0 0;">
+          <img src="image3" alt="Male part drawing with full dimensions and GD&T callouts" style="width:100%;height:auto;display:block;object-fit:contain;border-radius:6px;">
+          <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:8px;text-align:center;font-style:italic;">Figure 2: Male part drawing with full dimensions and GD&amp;T callouts.</figcaption>
+        </figure>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">Designing for Manufacturing</div>
+        <p class="proj-body-text">The part is built for high volume CNC turning. The biggest manufacturing decision was starting from hex bar stock instead of round bar. This produces the wrench flats straight from the raw material, so there is no separate milling step and no second setup. Fewer setups is the largest lever on cost at volume.</p>
+        <p class="proj-body-text">A relief groove before the thread lets the thread run out cleanly and lets the nut seat fully.</p>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">Choosing the Material</div>
+        <p class="proj-body-text">I specified 316 stainless steel. It resists corrosion well, including in wet and marine conditions, and it holds strength across a wide temperature range. That suits a sealing part where a leak is not acceptable.</p>
+        <p class="proj-body-text">A plated carbon steel version would cost less to make, but it gives up corrosion life, so it only makes sense in dry, controlled conditions.</p>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">Deliverables</div>
+        <ul class="proj-bullets">
+          <li>Inventor part and assembly files.</li>
+          <li>A dimensioned, GD&T annotated 2D drawing exported to PDF.</li>
+          <li>A one page design rationale covering design intent, material choice, and manufacturing reasoning.</li>
+        </ul>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:1.5rem;align-items:end;">
+          <figure style="margin:0;">
+            <div style="width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:6px;">
+              <img src="image4" alt="Male and female parts modeled in Inventor" style="width:100%;height:100%;object-fit:contain;display:block;">
+            </div>
+            <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 3: Male and female parts modeled in Inventor.</figcaption>
+          </figure>
+          <figure style="margin:0;">
+            <div style="width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:6px;">
+              <img src="image5" alt="Female mate showing the internal 37 degree seat" style="width:100%;height:100%;object-fit:contain;display:block;">
+            </div>
+            <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 4: Female mate showing the internal 37 degree seat.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">Reflection and Next Steps</div>
+        <ul class="proj-bullets">
+          <li>Model true thread geometry for cleaner renders.</li>
+          <li>Add a full drawing sheet for the female part.</li>
+          <li>Run a quick pressure and stress check to confirm wall thickness.</li>
+          <li>Add a tube sleeve as a third part to show the full tube connection.</li>
+        </ul>
+
+        <figure style="margin:1.5rem 0 0;">
+          <img src="image6" alt="Close up of the 37 degree sealing cone" style="width:100%;height:auto;display:block;object-fit:contain;border-radius:6px;">
+          <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:8px;text-align:center;font-style:italic;">Figure 5: Close up of the 37 degree sealing cone.</figcaption>
+        </figure>
+      </div>
+
+    </div>
+
+    <div class="proj-nav-footer">
+      <a href="project-gearbox.html" class="proj-nav-btn">← Planetary Gearbox</a>
+      <a href="projects.html" class="proj-nav-btn">All Projects →</a>
+    </div>
+
+    <footer>
+      <span class="footer-name">Abilasha Rameshkumar</span>
+      <div class="footer-links"><a href="https://www.linkedin.com/in/abilasha-rameshkumar" target="_blank">LinkedIn</a><a href="mailto:abilasharameshkumar@gmail.com">Email</a></div>
+      <span class="footer-email">abilasharameshkumar@gmail.com</span>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
