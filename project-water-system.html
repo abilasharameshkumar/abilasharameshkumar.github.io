@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Residential Water Distribution System Design - Abilasha Rameshkumar</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project-style.css">
+</head>
+<body class="scheme-teal">
+<nav>
+  <a href="index.html" class="nav-name">Abilasha Rameshkumar</a>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="resume.html">Resume</a></li>
+  </ul>
+</nav>
+
+<div class="proj-layout scheme-teal">
+  <aside class="proj-sidebar">
+    <a href="projects.html" class="back-link">← All Projects</a>
+    <div class="proj-sidebar-title">Projects</div>
+    <a href="project-capstone.html">Automated Garden Hose Caddy</a>
+    <a href="project-jic-fitting.html">Male JIC 37° Flare Hydraulic Fitting</a>
+    <a href="project-water-system.html" class="active">Residential Water Distribution System</a>
+    <a href="project-tractor.html">Tractor Pull Slot Car</a>
+    <a href="project-sharpener.html">Redesign of Staples Sharpener</a>
+    <a href="project-stragon.html">The "Stragon"</a>
+    <a href="project-gripper.html">Two-Finger Robotic Gripper</a>
+    <a href="project-vibration.html">Helicopter Tail Rotor Vibration Absorber</a>
+    <a href="project-gearbox.html">Planetary Gearbox</a>
+  </aside>
+
+  <div class="proj-main">
+    <div class="proj-page-hero">
+      <div class="section-eyebrow">COURSE PROJECT · 2026</div>
+      <h1 class="proj-page-title">Residential Water Distribution System Design</h1>
+      <p class="proj-page-sub">A full fluid system design that pumps water from a ground reservoir to two rooftop tanks. The project covers tank sizing, pipe layout, head loss analysis, pump selection and scaling, cavitation checks, and a full cost analysis.</p>
+      <div class="proj-page-tags">
+        <span class="proj-page-tag">Fluid Mechanics</span>
+        <span class="proj-page-tag">Pump Selection</span>
+        <span class="proj-page-tag">Head Loss Analysis</span>
+        <span class="proj-page-tag">Pipe Sizing</span>
+        <span class="proj-page-tag">NPSH and Cavitation</span>
+        <span class="proj-page-tag">Cost Analysis</span>
+        <span class="proj-page-tag">SolidWorks</span>
+        <span class="proj-page-tag">System Design</span>
+      </div>
+      <div class="proj-meta-row">
+        <div class="proj-meta-item"><strong>Type</strong>Course Project</div>
+        <div class="proj-meta-item"><strong>Course</strong>MEC616 Fluid Mechanics II</div>
+        <div class="proj-meta-item"><strong>Tools</strong>SolidWorks, Excel</div>
+        <div class="proj-meta-item"><strong>Year</strong>2026</div>
+      </div>
+    </div>
+
+    <!-- Hero image: full width, no caption -->
+    <figure style="margin:0;">
+      <img src="water1.png" alt="SolidWorks isometric view of the piping layout" style="width:100%;height:auto;display:block;object-fit:cover;max-height:480px;">
+    </figure>
+
+    <div class="proj-content">
+
+      <div class="proj-section">
+        <div class="proj-section-title">The Problem</div>
+        <p class="proj-body-text">The goal was to design a water system that pumps water from a ground level reservoir up to two storage tanks on the roof of a residential building. The system has to meet the building's water demand across the day, stay reliable, and keep both the build cost and the running cost low.</p>
+        <p class="proj-body-text">We compared three possible pipe layouts, chose the most efficient one, and designed the rest of the system around it.</p>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">Sizing the Tanks</div>
+        <p class="proj-body-text">Water use is not steady through the day. It is low from midnight to about 7 am, high from 8 am to 8 pm, and low again at night. We used the demand profile for each tank to find how much storage was needed so water is always available during peak hours.</p>
+        <p class="proj-body-text">Tank A was sized to 231 m³ and Tank B to 255 m³. Each size also includes margin for emergency overflow, one hour of full discharge, and the clearance needed to sit safely on the roof.</p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:1.5rem;align-items:end;">
+          <figure style="margin:0;">
+            <div style="width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:6px;">
+              <img src="water2.png" alt="Daily flow fluctuation pattern for Tank A" style="width:100%;height:100%;object-fit:contain;display:block;">
+            </div>
+            <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 1: Daily flow fluctuation pattern for Tank A.</figcaption>
+          </figure>
+          <figure style="margin:0;">
+            <div style="width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:6px;">
+              <img src="water3.png" alt="Daily flow fluctuation pattern for Tank B" style="width:100%;height:100%;object-fit:contain;display:block;">
+            </div>
+            <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 2: Daily flow fluctuation pattern for Tank B.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">Pipe Layout and Head Losses</div>
+        <p class="proj-body-text">We modeled the pipe layout in SolidWorks to plan the routing and identify every fitting the water passes through. We then calculated the energy the pump has to supply. This means adding the major losses from friction along the pipe to the minor losses from every elbow, valve, and junction.</p>
+        <p class="proj-body-text">Pipe sizes were chosen with an iterative Schedule 40 process, landing on 2 inch and 3 inch branch lines. The flow came out turbulent, which is normal for a system this size, with a Reynolds number near 70,700 and a total head of about 19.78 m.</p>
+
+        <figure style="margin:1.5rem 0 0;">
+          <img src="water4.png" alt="Top view of the piping layout modeled in SolidWorks" style="width:100%;height:auto;display:block;object-fit:contain;border-radius:6px;">
+          <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:8px;text-align:center;font-style:italic;">Figure 3: Top view of the piping layout modeled in SolidWorks.</figcaption>
+        </figure>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">Selecting and Scaling the Pump</div>
+        <p class="proj-body-text">We selected a Taco FL1207 pump and scaled it to meet the head and flow the system needs. Using pump similarity laws, the base 1160 rpm pump was scaled to about 1760 rpm, with impeller diameters of 5.75 in for Tank A and 5.25 in for Tank B.</p>
+        <p class="proj-body-text">We plotted the pump curve against the system curve to confirm the pump operates near the correct point.</p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:1.5rem;align-items:end;">
+          <figure style="margin:0;">
+            <div style="width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:6px;">
+              <img src="water5.png" alt="Pump curve comparison for Tank A" style="width:100%;height:100%;object-fit:contain;display:block;">
+            </div>
+            <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 4: Pump curve comparison for Tank A.</figcaption>
+          </figure>
+          <figure style="margin:0;">
+            <div style="width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:6px;">
+              <img src="water6.png" alt="Pump curve comparison for Tank B" style="width:100%;height:100%;object-fit:contain;display:block;">
+            </div>
+            <figcaption style="font-size:13px;color:var(--ps-muted);margin-top:6px;text-align:center;font-style:italic;">Figure 5: Pump curve comparison for Tank B.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">Checking for Cavitation</div>
+        <p class="proj-body-text">A pump can be damaged if the pressure at its inlet drops too low and the water starts to boil. To rule this out we compared the pressure the system provides, called NPSH available, against what the pump needs, called NPSH required.</p>
+        <p class="proj-body-text">For both tanks the available value was higher, so the pump runs safely with no cavitation.</p>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">Cost Analysis</div>
+        <p class="proj-body-text">We estimated both the cost to build the system and the cost to run it over 5 and 10 years. The pump and motor hardware was the single largest expense. Adding current interest and inflation raised the totals, and a worst case where the pump and valves need replacement raised them further.</p>
+
+        <table class="proj-table">
+          <thead>
+            <tr>
+              <th>Scenario</th>
+              <th>5 year</th>
+              <th>10 year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Base cost</td><td>$80,653</td><td>$92,722</td></tr>
+            <tr><td>With interest and inflation</td><td>$82,323</td><td>$96,369</td></tr>
+            <tr><td>Worst case with replacement</td><td>$144,768</td><td>$222,733</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">Results</div>
+        <ul class="proj-bullets">
+          <li>Tanks sized to 231 m³ and 255 m³ to meet all demand and safety constraints.</li>
+          <li>Branch lines of 2 inch and 3 inch Schedule 40, with all flow confirmed turbulent.</li>
+          <li>Total system head of 19.78 m.</li>
+          <li>Taco FL1207 pump scaled to about 1760 rpm.</li>
+          <li>Cavitation ruled out for both tanks.</li>
+          <li>Full build and operating cost estimated over 5 and 10 years.</li>
+        </ul>
+      </div>
+
+      <div class="proj-section">
+        <div class="proj-section-title">What Could Be Improved</div>
+        <ul class="proj-bullets">
+          <li>Balance pipe diameter against pump energy use to lower the long term running cost.</li>
+          <li>Build a more accurate CAD model tied to the real terrain routing.</li>
+          <li>Schedule more pumping at night to use the lower electricity rate of $0.097 per kWh instead of the daytime rate of $0.160 per kWh.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="proj-nav-footer">
+      <a href="project-jic-fitting.html" class="proj-nav-btn">← Male JIC 37° Flare Hydraulic Fitting</a>
+      <a href="project-tractor.html" class="proj-nav-btn">Next: Tractor Pull Slot Car →</a>
+    </div>
+
+    <footer>
+      <span class="footer-name">Abilasha Rameshkumar</span>
+      <div class="footer-links"><a href="https://www.linkedin.com/in/abilasha-rameshkumar" target="_blank">LinkedIn</a><a href="mailto:abilasharameshkumar@gmail.com">Email</a></div>
+      <span class="footer-email">abilasharameshkumar@gmail.com</span>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
